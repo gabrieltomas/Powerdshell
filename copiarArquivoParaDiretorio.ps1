@@ -1,4 +1,6 @@
 # Script para copiar arquivos de um unico diretorio para um diretorio para cada arquivo 
+# Para isso, cria-se uma pasta para cada arquivo utilizando o sequencial que compoe o nome do arquivo
+# como nome da pasta
 
 
 # Necessita alterar as Politicas de execucao do Powershell para executar o script
@@ -6,7 +8,8 @@
 # Aconselha-se voltar a politica de execucao anterior
 # Set-ExecutionPolicy -ExecutionPolicy Undefined -Scope CurrentUser
 
-#mkdir $(285463..285863 | %{"$_"})
+# exemplo de como criar as pastas em lote via linha de comando 
+# mkdir $(285463..285863 | %{"$_"})
 
 $prefixo = "image";
 
